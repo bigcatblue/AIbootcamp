@@ -1,7 +1,7 @@
 # Set up and run this Streamlit App
 import streamlit as st
 import pandas as pd
-# from helper_functions import llm
+from helper_functions import llm
 from logics.customer_query_handler import process_user_message
 
 
