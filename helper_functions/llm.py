@@ -7,7 +7,7 @@ import streamlit as st
 
 load_dotenv('.env')
 secret_key = st.secrets["OPENAI_KEY"]
-print(secret_key )
+#print(secret_key )
 # Pass the API Key to the OpenAI Client
 #client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 client = OpenAI(api_key=secret_key)
