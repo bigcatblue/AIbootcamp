@@ -1,30 +1,31 @@
-Company A,Software Engineer,Senior Engineer,$103317
-Company A,UX Designer,e,$93814
-Company A,Business Analyst,e,$98596
-Company A,Full Stack Developer,e,$95121
-Company A,Delivery Manager,e,$102697
-Company B,Software Engineer,e,$101755
-Company B,UX Designer,e,$91250
-Company B,Business Analyst,e,$104771
-Company B,Full Stack Developer,e,$94399
-Company B,Delivery Manager,e,$102926
-Company C,Software Engineer,e,$96861
-Company C,UX Designer,e,$100008
-Company C,Business Analyst,e,$95884
-Company C,Full Stack Developer,e,$103599
-Company C,Delivery Manager,e,$96846
-Company D,Software Engineer,e,$93317
-Company D,UX Designer,e,$94009
-Company D,Business Analyst,e,$102323
-Company D,Full Stack Developer,e,$103256
-Company D,Delivery Manager,e,$104458
-Company E,Software Engineer,e,$101218
-Company E,UX Designer,e,$93240
-Company E,Business Analyst,e,$96433
-Company E,Full Stack Developer,e,$91940
-Company E,Delivery Manager,e,$96626
-Company F,Software Engineer,e,$100805
-Company F,UX Designer,e,$104870
-Company F,Business Analyst,e,$95474
-Company F,Full Stack Developer,e,$93242
-Company F,Delivery Manager,e,$94636
+Company,Role,Seniority,Cost
+Accenture,Software Engineer,Senior Engineer,94286
+Accenture,UX Designer,Associate,58660
+Accenture,Business Analyst,Senior Engineer,104623
+Accenture,Full Stack Developer,Associate,61559
+Accenture,Delivery Manager,Associate,53932
+Wippro,Software Engineer,Engineer,74448
+Wippro,UX Designer,Engineer,71896
+Wippro,Business Analyst,Associate,57215
+Wippro,Full Stack Developer,Engineer,74448
+Wippro,Delivery Manager,Engineer,76343
+NCS,Software Engineer,Senior Engineer,92007
+NCS,UX Designer,Associate,52455
+NCS,Business Analyst,Senior Engineer,91937
+NCS,Full Stack Developer,Senior Engineer,101798
+NCS,Delivery Manager,Engineer,70229
+Avepoint,Software Engineer,Associate,58466
+Avepoint,UX Designer,Senior Engineer,98425
+Avepoint,Business Analyst,Engineer,79681
+Avepoint,Full Stack Developer,Associate,55102
+Avepoint,Delivery Manager,Senior Engineer,98956
+KPMG,Software Engineer,Associate,55238
+KPMG,UX Designer,Engineer,72332
+KPMG,Business Analyst,Engineer,80071
+KPMG,Full Stack Developer,Senior Engineer,103816
+KPMG,Delivery Manager,Senior Engineer,90287
+Cognizant,Software Engineer,Engineer,74569
+Cognizant,UX Designer,Associate,62676
+Cognizant,Business Analyst,Engineer,78791
+Cognizant,Full Stack Developer,Associate,60029
+Cognizant,Delivery Manager,Engineer,84042
