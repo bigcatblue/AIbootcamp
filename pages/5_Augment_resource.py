@@ -4,10 +4,11 @@ from dotenv import load_dotenv
 from crewai import Agent, Task, Crew
 from crewai_tools import tool
 import sqlite3
+import streamlit as st
+
 with open(".streamlit/secrets.toml", "r") as f:
     secrets = toml.load(f)
 
-#print(secrets['OPENAI_KEY'])
 os.environ['OPENAI_API_KEY'] = secrets['OPENAI_KEY']
 
 @tool("SQLreader")
@@ -112,3 +113,5 @@ print("-----------------------------------------\n\n")
 print(f"Tasks Output of Task 1: {result.tasks_output[0]}")
 print("-----------------------------------------\n\n")
 print(f"Tasks Output of Task 2: {result.tasks_output[1]}")
+st.write_stream(result.tasks_output[0])
+st.write_stream(result.tasks_output[1])
