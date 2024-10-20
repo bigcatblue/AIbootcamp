@@ -7,4 +7,5 @@ langchain-openai
 langchain-experimental
 pandas
 crewai
+crewai_tools
 
