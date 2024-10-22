@@ -1,3 +1,6 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import toml
 import os
 from dotenv import load_dotenv
@@ -5,9 +8,7 @@ from crewai import Agent, Task, Crew
 from crewai_tools import tool
 import sqlite3
 import streamlit as st
-import('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 
 def run_crewai_app(question):
