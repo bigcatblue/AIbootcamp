@@ -1,31 +1,50 @@
 Company,Role,Seniority,Cost
-Accenture,Software Engineer,Senior Engineer,94286
-Accenture,UX Designer,Associate,58660
-Accenture,Business Analyst,Senior Engineer,104623
-Accenture,Full Stack Developer,Associate,61559
-Accenture,Delivery Manager,Associate,53932
-Wippro,Software Engineer,Engineer,74448
-Wippro,UX Designer,Engineer,71896
-Wippro,Business Analyst,Associate,57215
-Wippro,Full Stack Developer,Engineer,74448
-Wippro,Delivery Manager,Engineer,76343
-NCS,Software Engineer,Senior Engineer,92007
-NCS,UX Designer,Associate,52455
-NCS,Business Analyst,Senior Engineer,91937
-NCS,Full Stack Developer,Senior Engineer,101798
-NCS,Delivery Manager,Engineer,70229
-Avepoint,Software Engineer,Associate,58466
-Avepoint,UX Designer,Senior Engineer,98425
-Avepoint,Business Analyst,Engineer,79681
-Avepoint,Full Stack Developer,Associate,55102
-Avepoint,Delivery Manager,Senior Engineer,98956
-KPMG,Software Engineer,Associate,55238
-KPMG,UX Designer,Engineer,72332
-KPMG,Business Analyst,Engineer,80071
-KPMG,Full Stack Developer,Senior Engineer,103816
-KPMG,Delivery Manager,Senior Engineer,90287
-Cognizant,Software Engineer,Engineer,74569
-Cognizant,UX Designer,Associate,62676
-Cognizant,Business Analyst,Engineer,78791
-Cognizant,Full Stack Developer,Associate,60029
-Cognizant,Delivery Manager,Engineer,84042
+Accenture,software engineer,engineer,92393
+Accenture,ux designer,engineer,100607
+Accenture,business analyst,associate,92084
+Accenture,full stack developer,associate,98029
+Accenture,delivery manager,associate,92266
+Accenture,business transformer,engineer,94501
+Accenture,data scientist,associate,98714
+Wippro,software engineer,engineer,100753
+Wippro,ux designer,senior engineer,92147
+Wippro,business analyst,engineer,93994
+Wippro,full stack developer,senior engineer,97637
+Wippro,delivery manager,associate,91819
+Wippro,business transformer,engineer,90377
+Wippro,data scientist,associate,100471
+NCS,software engineer,associate,104214
+NCS,ux designer,engineer,95275
+NCS,business analyst,associate,103618
+NCS,full stack developer,senior engineer,100949
+NCS,delivery manager,senior engineer,91415
+NCS,business transformer,senior engineer,99201
+NCS,data scientist,associate,90103
+Avepoint,software engineer,senior engineer,99385
+Avepoint,ux designer,associate,90060
+Avepoint,business analyst,senior engineer,93163
+Avepoint,full stack developer,engineer,99003
+Avepoint,delivery manager,senior engineer,91846
+Avepoint,business transformer,senior engineer,90841
+Avepoint,data scientist,senior engineer,95326
+KPMG,software engineer,engineer,100730
+KPMG,ux designer,associate,96221
+KPMG,business analyst,associate,93931
+KPMG,full stack developer,engineer,93069
+KPMG,delivery manager,associate,96404
+KPMG,business transformer,associate,91316
+KPMG,data scientist,engineer,91030
+Cognizant,software engineer,engineer,91399
+Cognizant,ux designer,associate,92560
+Cognizant,business analyst,associate,101735
+Cognizant,full stack developer,associate,104206
+Cognizant,delivery manager,associate,100585
+Cognizant,business transformer,senior engineer,95748
+Cognizant,data scientist,associate,95882
+Deloitte,software engineer,senior engineer,100493
+Deloitte,ux designer,engineer,92124
+Deloitte,business analyst,associate,99722
+Deloitte,full stack developer,associate,90851
+Deloitte,delivery manager,senior engineer,90551
+Deloitte,business transformer,engineer,97982
+Deloitte,data scientist,senior engineer,92376
