@@ -8,28 +8,12 @@ from logics.customer_query_handler import process_user_message
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
     layout="centered",
-    page_title="My Streamlit App"
+    page_title="Augement Resource Page"
 )
 # endregion <--------- Streamlit App Configuration --------->
 
-st.title("Streamlit App")
+st.title("Streamlit App for Augmented Resource")
 
-form = st.form(key="form")
-form.subheader("Prompt")
-
-user_prompt = form.text_area("Enter your prompt here", height=200)
-
-if form.form_submit_button("Submit"):
-    
-    st.toast(f"User Input Submitted - {user_prompt}")
-
-    st.divider()
-
-    response, course_details = process_user_message(user_prompt)
-    st.write(response)
-
-    st.divider()
-
-    print(course_details)
-    df = pd.DataFrame(course_details)
-    df 
+st.write("This is a Streamlit App that demonstrates how to use the OpenAI API to generate SQL statement and analysis of the data. In the augmented resource page, there is a chatbot implemented using CrewAI that retrieves a list of augmented resources in a SQLite database.")
+st.write("User enters a questions and an agent translate it to a SQL statement and queries the database.")
+st.write("Another agent, writer will analyse the data and write an analysis")
