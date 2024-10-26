@@ -122,19 +122,34 @@ def main():
     st.title("Augmented resource chat bot.")
 
     # Create a text input field for the user to enter their message
-    user_input = st.text_input("Ask me about the different resources and its cost")
+    st.write("There is a database of companies and its offered augemented resources. Ask me about the different resources and its cost. The chat will translate text into SQL statement and query the database.")
 
     # Create a button to trigger the chat
-    if st.button("Send"):
-        # Use CrewAI's API to generate a response based on the user's input
-        #result = run_crewai_app("I want to hire 2 software engineer for a project. Find the cheapest and give me the details.")
+    Ask_augmented_resource = st.form("Ask_augmented_resource")
+    user_input = Ask_augmented_resource.text_input("Ask me about the different resources and its cost. Hit enter or click on the send button" )
+    submit_button = Ask_augmented_resource.form_submit_button("Ask now")
+    if submit_button:
         result = run_crewai_app(user_input.lower())
         # Display the response to the user
         st.write(result.raw)
-        st.write('Out put below is for testing only and will be removed in production')
+        st.divider()
+
+        st.divider()
+        st.write('Out put below is for testing only and understanding how the agents work')
         st.write(result.tasks_output[0])
         st.write(result.tasks_output[1])
         st.write_stream(result)
+
+    #if st.button("Send"):
+    #    # Use CrewAI's API to generate a response based on the user's input
+    #    #result = run_crewai_app("I want to hire 2 software engineer for a project. Find the cheapest and give me the details.")
+    #    result = run_crewai_app(user_input.lower())
+    #    # Display the response to the user
+    #    st.write(result.raw)
+    #    st.write('Out put below is for testing only and will be removed in production')
+    #    st.write(result.tasks_output[0])
+    #    st.write(result.tasks_output[1])
+    #    st.write_stream(result)
         
 
 if __name__ == "__main__":

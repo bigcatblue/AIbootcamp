@@ -1,35 +1,43 @@
 #Set up and run this Streamlit App
 import streamlit as st
 import pandas as pd
-from helper_functions import llm
-from logics.customer_query_handler import process_user_message
-
+from openai import OpenAI
 
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
     layout="centered",
-    page_title="My Streamlit App"
+    page_title="Streamlit Augmented Resource AOR App"
 )
 # endregion <--------- Streamlit App Configuration --------->
 
-st.title("Streamlit App")
+st.title("I can help draft an AOR for augmented resources")
 
-form = st.form(key="form")
-form.subheader("Prompt")
+client = OpenAI(api_key=st.secrets["OPENAI_KEY"])
 
-user_prompt = form.text_area("Enter your prompt here", height=200)
+if "openai_model" not in st.session_state:
+    st.session_state["openai_model"] = "gpt-3.5-turbo"
 
-if form.form_submit_button("Submit"):
-    
-    st.toast(f"User Input Submitted - {user_prompt}")
+if "messages" not in st.session_state:
+    st.session_state.messages = []
 
-    st.divider()
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
 
-    response, course_details = process_user_message(user_prompt)
-    st.write(response)
+if prompt := st.chat_input("What is up?"):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
 
-    st.divider()
+    with st.chat_message("assistant"):
+        stream = client.chat.completions.create(
+            model=st.session_state["openai_model"],
+            messages=[
+                {"role": m["role"], "content": m["content"]}
+                for m in st.session_state.messages
+            ],
+            stream=True,
+        )
+        response = st.write_stream(stream)
+    st.session_state.messages.append({"role": "assistant", "content": response})
 
-    print(course_details)
-    df = pd.DataFrame(course_details)
-    df 
