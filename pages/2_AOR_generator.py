@@ -193,7 +193,7 @@ if "openai_model" not in st.session_state:
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
-    st.session_state.messages.append({"role": "assistant", "content": initial_prompt})
+    st.session_state.messages.append({"role": "system", "content": initial_prompt})
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
