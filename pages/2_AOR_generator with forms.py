@@ -4,6 +4,7 @@ import pandas as pd
 from openai import OpenAI
 from helper_functions.llm import get_completion_by_messages
 import docx
+import io
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
     layout="centered",
@@ -90,8 +91,12 @@ with st.form("Improve AOR"):
 if st.button("Export as Word Document"):
         doc = docx.Document()
         doc.add_paragraph(st.session_state["aor_text"])
-        doc.save("justification.docx")
+        bio = io.BytesIO()
+        doc.save(bio)
+        st.download_button(label="Download Justification", data=bio.getvalue(), file_name="justification.docx")
         st.write("File saved as justification.docx")
+        st.session_state["aor_text_to_save"] = aor_text_area
+
 
 if st.button("Clear"):
     st.session_state.clear()
