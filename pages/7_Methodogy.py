@@ -1,4 +1,5 @@
-import streamlit as st 
+import streamlit as st
+from PIL import Image
 
 st.html("<h4>Team: Luo Yi Hua (PRCT), Sophia Siak (CSG), Kang Khong Beng (CIO Office)</h4>")
 
@@ -15,7 +16,13 @@ st.html("""
 <h5>Process flow</h5>
 <br>
 The hiring of augment resource has the following general flow.
-<img src="https://photos.app.goo.gl/Fs4ovmFjBGC92hoz6"/>
+""")
+
+process_flow = Image.open("data/process.png")
+st.image(process_flow)
+
+st.html("""
+
 <br>
 <br>
 <h5>Pain points</h5>
@@ -36,10 +43,11 @@ For user that is unfamiliar in creating AOR, a standard template is generated fo
     2.	Pain point 2, OpenAI, and Streamlit form components are used. There are two solutions to it.
 
         <br><br>i.	In AOR generator page, a prompt is created for the LLM to ask various questions for before creating a AOR that user can copy and submit for approval.
+""")
+LLM = Image.open("data/LLM.png")
+st.image(LLM)
 
-        <img src="https://github.com/bigcatblue/AIbootcamp/blob/main/data/LLM.png"/>
-
-        <br><br>ii.	In AOR generator page with forms page uses Streamlit’s form capabilities to guide the users to completing key data required for the AOR and use LLM to generate a justification and allow the AOR to be downloaded as a MS Word document. 
-
-        <img src="https://github.com/bigcatblue/AIbootcamp/blob/main/data/Forms.png"/>
+st.html("""        <br><br>ii.	In AOR generator page with forms page uses Streamlit’s form capabilities to guide the users to completing key data required for the AOR and use LLM to generate a justification and allow the AOR to be downloaded as a MS Word document. 
         """)
+form_image = Image.open("data/Forms.png")
+st.image(form_image)
