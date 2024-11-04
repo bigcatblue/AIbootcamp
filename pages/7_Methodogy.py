@@ -28,9 +28,7 @@ st.html("""
 <h5>Pain points</h5>
     1.	In step 1. selection the resources from the list of tenders, user has to read several tenders submission that are in excel files and various tabs. 
 
-    2.	Step 2, generating the supporting document is very tedious but this solution does not require a large language model, hence it is not part of the submission for the bootcamp. 
-
-For user that is unfamiliar in creating AOR, a standard template is generated for user. 
+    2.	Step 2, for user that is unfamiliar in creating AOR, a standard template is generated for user. 
 <br>
 <br>
 <h5>Solution and methodology</h5>
