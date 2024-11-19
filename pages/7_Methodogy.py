@@ -27,7 +27,7 @@ st.html("""
 <br>
 <h5>Pain points</h5>
     1.	In step 1. selection the resources from the list of tenders, user has to read several tenders submission that are in excel files and various tabs. 
-
+<br>
     2.	Step 2, for user that is unfamiliar in creating AOR, a standard template is generated for user. 
 <br>
 <br>

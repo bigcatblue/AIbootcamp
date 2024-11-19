@@ -9,5 +9,5 @@ st.set_page_config(
 
 st.title("This is to generate supporting document")
 
-st.html("This is not part of the AI bootcamp submission as it does not require LLM. A program generates an Excel supporting document instead")
+st.html("This is not part of the AI bootcamp submission as it does not require LLM. A program generates an Excel supporting document")
 
